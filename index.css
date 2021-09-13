@@ -1,0 +1,571 @@
+p{
+  font-size: 20px;
+}
+ 
+a{
+text-decoration: none;
+color: #8c52ff;
+font-size: 20px;
+}
+
+h2{
+  font-size: 35px;
+}
+
+
+
+h3{
+  font-size: 25px;
+}
+ html {
+   scroll-behavior: smooth;
+ }
+
+body{
+  
+  background-color: rgb(250, 236, 234);
+}
+
+
+
+/* Les id */
+#bold{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.menu{
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    width: 100%;
+    z-index: 10000;
+    padding: 10px;
+    width: 150px;
+  }
+
+  
+.menu a{
+  text-decoration: none;
+  color: #8c52ff;
+  font-weight: bold;
+  font-size: 30px;
+  }
+
+.menu a:hover{
+  font-size: 35px;
+  transition-duration: .5s;
+}
+
+#page-profile{
+  width:25%;
+  clip-path:ellipse(50% 50%);
+  margin-left: 38%;
+  margin-top: 5%;
+
+}
+
+#rajoutEspace{
+  margin-left: 20%;
+  line-height: 90%;
+}
+
+
+
+
+
+/* les class */
+
+/* page 1 */
+
+.page1{
+background-color: #16181b;
+-webkit-box-shadow: 0px 14px 35px 0px rgba(140,82,255,1);
+-moz-box-shadow: 0px 14px 35px 0px rgba(140,82,255,1);
+box-shadow: 0px 14px 35px 0px rgba(140,82,255,1);
+padding-bottom: 10%;
+}
+
+
+.texteMilieu{
+  text-align: center;
+  color: white;
+}
+
+.info{
+  text-align: center;
+  width: 35%;
+  margin-left: 60%;
+  color: white;
+  border: solid 3px #8c52ff ;
+  border-radius: 30px ;
+  line-height: 150%;
+}
+
+.violette{
+  color: #8c52ff;
+}
+
+
+/* page2 */
+
+.page2{
+  margin-top: 100px;
+}
+.competences, .formations{
+  float: left; /*permet de faire deux colonnes*/
+}
+
+.formations{
+  margin-left: 25%;
+  width: 30%;
+
+}
+.competences{
+  width: 40%;
+}
+
+.enligne{
+  display: inline-flex;
+ 
+}
+
+/* progress bar */
+/* PB1 et PB2 */
+.progress-bar1, .progress-bar2 { 
+  width: 80%;
+  height: 24px;
+  padding: 4px;
+  background-color: #191919;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+  -webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+  -moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+}
+
+.progress-bar1:before, .progress-bar2:before { 
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20%; /* il faut changer ça pour taille bar  */
+  height: 24px;
+  background: #999;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+
+.progress-bar1:after, .progress-bar2:after { 
+  content: '|||||||||||||';
+  display: block;
+  position: absolute;
+  width: 20%; /* changer avec le width de progress-bar */
+  height: 24px;
+  overflow: hidden;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  transform: skewX(-30deg);
+  -webkit-transform: skewX(-30deg);
+  -moz-transform: skewX(-30deg);
+  -o-transform: skewX(-30deg);
+  font: bold 120px/80px sans-serif;
+  letter-spacing: -6px;
+  color: #000;
+  opacity: 0.06;
+}
+
+
+
+/* PB3, PB6, PB7 ett PB8 */
+
+
+
+.progress-bar3, .progress-bar6, .progress-bar7, .progress-bar8 { 
+  width: 80%;
+  height: 24px;
+  padding: 4px;
+  background-color: #191919;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+  -webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+  -moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+}
+
+.progress-bar3:before, .progress-bar6:before, .progress-bar7:before, .progress-bar8:before { 
+  content: '';
+  display: block;
+  position: absolute;
+  width: 18%;
+  height: 24px;
+  background: #999;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+
+.progress-bar3:after, .progress-bar6:after, .progress-bar7:after, .progress-bar8:after  { 
+  content: '|||||||||||||';
+  display: block;
+  position: absolute;
+  width: 18%;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  transform: skewX(-30deg);
+  -webkit-transform: skewX(-30deg);
+  -moz-transform: skewX(-30deg);
+  -o-transform: skewX(-30deg);
+  font: bold 120px/80px sans-serif;
+  letter-spacing: -6px;
+  color: #000;
+  opacity: 0.06;
+}
+
+
+
+/* PB4 */
+
+
+
+.progress-bar4 { 
+  width: 80%;
+  height: 24px;
+  padding: 4px;
+  background-color: #191919;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+  -webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+  -moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+}
+
+.progress-bar4:before { 
+  content: '';
+  display: block;
+  position: absolute;
+  width: 15%;
+  height: 24px;
+  background: #999;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+
+.progress-bar4:after { 
+  content: '|||||||||||||';
+  display: block;
+  position: absolute;
+  width: 15%;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  transform: skewX(-30deg);
+  -webkit-transform: skewX(-30deg);
+  -moz-transform: skewX(-30deg);
+  -o-transform: skewX(-30deg);
+  font: bold 120px/80px sans-serif;
+  letter-spacing: -6px;
+  color: #000;
+  opacity: 0.06;
+}
+
+
+
+/* PB5 */
+
+
+
+.progress-bar5 { 
+  width: 80%;
+  height: 24px;
+  padding: 4px;
+  background-color: #191919;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+  -webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+  -moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+}
+
+.progress-bar5:before { 
+  content: '';
+  display: block;
+  position: absolute;
+  width: 12%;
+  height: 24px;
+  background: #999;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+
+.progress-bar5:after { 
+  content: '|||||||||||||';
+  display: block;
+  position: absolute;
+  width: 12%;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  transform: skewX(-30deg);
+  -webkit-transform: skewX(-30deg);
+  -moz-transform: skewX(-30deg);
+  -o-transform: skewX(-30deg);
+  font: bold 120px/80px sans-serif;
+  letter-spacing: -6px;
+  color: #000;
+  opacity: 0.06;
+}
+
+
+
+
+.blue:before { 
+  background: #8c52ff;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#8c52ff), to(#8c52ff));
+  background: -moz-linear-gradient(top, #8c52ff, #8c52ff);
+}
+
+
+/* fin progress bar */
+
+
+
+/* page3 */
+.page3{
+  clear: both; 
+  margin-left: 25%;
+  padding-top: 15%; 
+  width: auto;
+  
+  
+}
+
+/* projets */
+
+ .description{
+  max-width: 50%;
+  display: inline-block;
+  color: white;
+  object-fit: cover;
+}
+
+.langue{
+  margin-left: 8%;
+  display: inline-flex;
+  color: white;
+}
+
+
+.text {
+  color: white;
+}
+
+.overlayFade{
+  height: 100%;
+  width:100%;
+  top:0;
+  left:0;
+  background-color: #ff946bbd;
+}
+.overlay {
+  position: absolute;
+  opacity: 0;
+  transition:all .3s ease;
+  background-color: black;
+}
+
+/* box1 */
+
+.boxWeb{
+  position: relative;
+  display: inline-block;
+  border: solid 2px #8c52ff;
+  margin-bottom: 10px;
+  
+}
+
+.imageWeb{
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 275px;
+}
+
+.container:hover .overlay,.boxWeb:hover .overlayFade {
+  opacity: .7;
+}
+
+
+/* box 2 */
+
+.boxUnity{
+  position: relative;
+  display: inline-block;
+  border: solid 2px #8c52ff;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.imageUnity{
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 275px;
+}
+
+.container:hover .overlay,.boxUnity:hover .overlayFade {
+  opacity: .8;
+}
+
+
+
+/* box 3 */
+
+.boxPhp{
+  position: relative;
+  display: inline-block;
+  border: solid 2px #8c52ff;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.imagePhp{
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 275px;
+}
+
+.container:hover .overlay,.boxPhp:hover .overlayFade {
+  opacity: .8;
+}
+
+
+
+
+
+
+
+@media (max-width: 1600px) {
+  .boxWeb{
+    overflow: scroll;
+    background-color: black;
+  }
+  .boxPhp{
+    overflow: scroll;
+    background-color: black;
+  }
+  .boxUnity{
+    overflow: scroll;
+    background-color: black;
+  }
+  .page3 img{
+    object-fit: contain;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* page 4 */
+.page4{
+  margin-left: 25%;
+  padding-bottom: 5%; 
+  width: auto;
+  padding-top: 100px;
+ 
+}
+
+.page4_background{
+  background-color: #16181b;
+  margin-top: 10%;
+  -webkit-box-shadow: 0px -14px 35px 0px rgba(140,82,255,1);
+  -moz-box-shadow: 0px -14px 35px 0px rgba(140,82,255,1);
+  box-shadow: 0px -14px 35px 0px rgba(140,82,255,1);
+  
+  
+}
+.page4 img{
+  width: 150px;
+  display: inline-block;
+}
+
+.images{
+  margin-top: 50px;
+  
+}
+
+.github{
+  margin-left: 5%;
+  margin-right: 10%;
+  border-radius: 30px;
+}
+
+.github:hover{
+width: 175px;
+transition-duration: .5s;
+}
+
+.linkedin{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.linkedin:hover{
+  width: 175px;
+  transition-duration: .5s;
+  }
+
+.CV{
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+.CV:hover{
+  width: 175px;
+  transition-duration: .5s;
+  }
+
+.contact{
+  margin-top: 50px;
+  color: white;
+}
+
+.adresse{
+  display: inline-flex;
+}
+
+.map{
+  margin-left: 25%;
+}
